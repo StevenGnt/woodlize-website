@@ -2,14 +2,18 @@ html, body {
   min-height:100%;
 }
 
-body {
-  background-image: url("images/background/woodlize-2000.jpg");
+body, body.background-0 {
+  background-image: url("images/background/big/0.jpg");
   background-position:center;
   background-repeat: no-repeat;
   background-size: contain;
   background-color:#191919;
   color: white;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body.background-1 {
+ background-image: url("images/background/big/1.jpg"); 
 }
 
 #content {
@@ -56,8 +60,12 @@ footer {
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-  body {
-    background-image: url("images/background/woodlize-600.jpg");
+  body, body.background-0 {
+    background-image: url("images/background/small/0.jpg");
+  }
+
+  body.background-1 {
+   background-image: url("images/background/small/1.jpg"); 
   }
   
   
