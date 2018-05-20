@@ -29,14 +29,17 @@ body.background-1 {
 
 #social {
   display: flex;
-  flex-direction: column;
   margin-top: 25px;
   margin-left: 15px;
+
   width: 30px;
   flex: 1;
+  flex-direction: column;
 }
 
 #social a {
+  align-self: center;
+  max-width: 40px;
   margin: 3px;
   color: white;
   font-size: 2.5em;
@@ -44,8 +47,13 @@ body.background-1 {
   opacity: 0.78;
 }
 
-.social-icon {
-  width: 30px;
+#social a:hover {
+  opacity: 0.93;
+}
+
+/* Deezer */
+.deezer-icon img {
+  max-width: 35px;
 }
 
 .social-title {
@@ -86,10 +94,19 @@ footer {
   }
   
   #social a {
-    font-size: 10em;
-    text-align: center;
-    margin: 0px 20px;
-    padding: 20px;
+    font-size: 8em;
+    max-width: none;
+    margin: 0px 25px;
+  }
+
+  /* Deezer */
+  .deezer-icon {
+    margin-right: 55px;
+  }
+
+  .deezer-icon img {
+    max-width: none;
+    width: 110px;
   }
 
   footer {
